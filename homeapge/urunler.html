@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Güzellik Dünyası - Ürünler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Güzellik Dünyası</div>
+  </header>
+
+  <!-- Navigasyon -->
+  <nav>
+    <ul>
+      <li><a href="anasayfa.html">Ana Sayfa</a></li>
+      <li><a href="urunler.html">Ürünler</a></li>
+      <li><a href="kategoriler.html">Kategoriler</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1 class="section-title">Tüm Ürünlerimiz</h1>
+
+    <div class="ürün-wrapper">
+      <div class="ürün">
+        <div class="ürün-image">
+          <img src="/img/mat ruj.jpg" alt="Ruj">
+        </div>
+        <div class="ürün-info">
+          <h3 class="ürün-title">Mat Ruj</h3>
+          <div class="ürün-price">129.99 TL</div>
+          <button class="add-to-cart" onclick="openModal()">Sepete Ekle</button>
+        </div>
+      </div>
+
+      <div class="ürün">
+        <div class="ürün-image">
+          <img src="/img/fön.jpg" alt="Fondöten">
+        </div>
+        <div class="ürün-info">
+          <h3 class="ürün-title">Uzun Süre Kalıcı Fondöten</h3>
+          <div class="ürün-price">249.99 TL</div>
+          <button class="add-to-cart" onclick="openModal()">Sepete Ekle</button>
+        </div>
+      </div>
+
+      <div class="ürün">
+        <div class="ürün-image">
+          <img src="/img/maskara.jpg" alt="Maskara">
+        </div>
+        <div class="ürün-info">
+          <h3 class="ürün-title">Hacim Veren Maskara</h3>
+          <div class="ürün-price">159.99 TL</div>
+          <button class="add-to-cart" onclick="openModal()">Sepete Ekle</button>
+        </div>
+      </div>
+
+      <div class="üruün">
+        <div class="ürün-image">
+          <img src="/img/ALLIK.jpg" alt="Allık">
+        </div>
+        <div class="ürün-info">
+          <h3 class="ürün-title">Kadife Dokulu Allık</h3>
+          <div class="ürün-price">179.99 TL</div>
+          <button class="add-to-cart" onclick="openModal()">Sepete Ekle</button>
+        </div>
+      </div>
+
+      <div class="ürün">
+        <div class="ürün-image">
+          <img src="/img/eye.jpg" alt="Eyeliner">
+        </div>
+        <div class="ürün-info">
+          <h3 class="ürün-title">Suya Dayanıklı Eyeliner</h3>
+          <div class="ürün-price">89.99 TL</div>
+          <button class="add-to-cart" onclick="openModal()">Sepete Ekle</button>
+        </div>
+      </div>
+
+      <div class="ürün">
+        <div class="ürün-image">
+          <img
+            src="https://img.freepik.com/free-vector/lip-gloss-realistic-set-with-cosmetics-symbols-isolated-vector-illustration_1284-16256.jpg?t=st=1745939627~exp=1745943227~hmac=5d06dfada663717d5faa809ff1fcaa1cfe29d46353968b2eeb39f8d7aada402d&w=740"
+            alt="Lip Gloss">
+        </div>
+        <div class="ürün-info">
+          <h3 class="ürün-title">Parlak Lip Gloss</h3>
+          <div class="ürün-price">99.99 TL</div>
+          <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Güzellik Dünyası</h3>
+        <p>En kaliteli kozmetik ve makyaj ürünlerini sizlerle buluşturuyoruz.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Hızlı Erişim</h3>
+        <ul class="footer-links">
+          <li><a href="anasayfa.html">Ana Sayfa</a></li>
+          <li><a href="urunler.html">Ürünler</a></li>
+          <li><a href="kategoriler.html">Kategoriler</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>İletişim</h3>
+        <ul class="footer-links">
+          <li>Telefon: 0212 123 45 67</li>
+          <li>E-posta: info@guzellikdunyasi.com</li>
+          <li>Adres: Ankara, Türkiye</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      &copy; 2025 Güzellik Dünyası. Tüm hakları saklıdır.
+    </div>
+  </footer>
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <h2>Sepetiniz</h2>
+      <p>Ürün sepetinize eklendi!</p>
+      <button class="btn" onclick="closeModal() " style="width: 100%; margin-top: 15px;">Alışverişe Devam Et</button>
+    </div>
+  </div>
+  <script>
+    function openModal() {
+      document.getElementById("cart-modal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("cart-modal").style.display = "none";
+    }
+
+    // Sayfa dışına tıklayınca da modal kapansın
+    window.onclick = function (event) {
+      if (event.target == document.getElementById("cart-modal")) {
+        closeModal();
+      }
+    }
+  </script>
+</body>
+
+</html>

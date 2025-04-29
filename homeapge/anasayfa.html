@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Güzellik Dünyası - Makyaj Ürünleri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Güzellik Dünyası</div>
+  </header>
+
+  <!-- Navigasyon -->
+  <nav>
+    <ul>
+      <li><a href="anasayfa.html">Ana Sayfa</a></li>
+      <li><a href="urunler.html">Ürünler</a></li>
+      <li><a href="kategoriler.html">Kategoriler</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <div class="banner">
+    <div class="banner-content">
+      <h1>Güzelliğin Adresi</h1>
+      <p>En kaliteli makyaj ürünleri ve kozmetik ürünleri uygun fiyatlarla sizlerle buluşuyor!</p>
+      <a href="urunler.html" class="btn">Alışverişe Başla</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="kategoriler">
+      <h2 class="section-title">Kategoriler</h2>
+      <div class="kategoriler-wrapper">
+        <div class="kategori">
+          <img src="/img/makyaj.webp" alt="Makyaj">
+          <h3>Makyaj</h3>
+          <p>Tüm makyaj ürünleri</p>
+        </div>
+        <div class="kategori">
+          <img src="/img/cilt bakım.jpg" alt="Cilt Bakımı">
+          <h3>Cilt Bakımı</h3>
+          <p>Cilt bakım ürünleri</p>
+        </div>
+        <div class="kategori">
+          <img src="/img/parfüm.jpg" alt="Parfüm">
+          <h3>Parfüm</h3>
+          <p>Kadın ve erkek parfümleri</p>
+        </div>
+        <div class="kategori">
+          <img src="/img/saçbakım.jpg" alt="Saç Bakımı">
+          <h3>Saç Bakımı</h3>
+          <p>Saç bakım ürünleri</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ürün-wrapper">
+      <h2 class="section-title">Popüler Ürünler</h2>
+      <div class="ürün-wrapper">
+        <div class="ürün">
+          <div class="ürün-image">
+            <img src="/img/mat ruj.jpg" alt="Ruj">
+          </div>
+          <div class="ürün-info">
+            <h3 class="ürün-title">Mat Ruj</h3>
+            <div class="ürün-price">129.99 TL</div>
+            <button class="add-to-cart" onclick="openModal()">Sepete Ekle</button>
+          </div>
+        </div>
+
+        <div class="ürün">
+          <div class="ürün-image">
+            <img src="/img/fön.jpg" alt="Fondöten">
+          </div>
+          <div class="ürün-info">
+            <h3 class="ürün-title">Uzun Süre Kalıcı Fondöten</h3>
+            <div class="ürün-price">249.99 TL</div>
+            <button class="add-to-cart" onclick="openModal()">Sepete Ekle</button>
+          </div>
+        </div>
+
+        <div class="ürün">
+          <div class="ürün-image">
+            <img src="/img/maskara.jpg" alt="Maskara">
+          </div>
+          <div class="ürün-info">
+            <h3 class="ürün-title">Hacim Veren Maskara</h3>
+            <div class="ürün-price">159.99 TL</div>
+            <button class="add-to-cart" onclick="openModal()">Sepete Ekle</button>
+          </div>
+        </div>
+
+        <div class="ürün">
+          <div class="ürün-image">
+            <img src="/img/ALLIK.jpg" alt="Allık">
+          </div>
+          <div class="ürün-info">
+            <h3 class="ürün-title">Kadife Dokulu Allık</h3>
+            <div class="ürün-price">179.99 TL</div>
+            <button class="add-to-cart" onclick="openModal()">Sepete Ekle</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="özellikler">
+    <div class="container">
+      <div class="özellik-wrapper">
+        <div class="özellik">
+          <div class="özellik-icon">🚚</div>
+          <h3>Ücretsiz Kargo</h3>
+          <p>300 TL ve üzeri alışverişlerde ücretsiz kargo</p>
+        </div>
+
+        <div class="özellik">
+          <div class="özellik-icon">💯</div>
+          <h3>Kalite Garantisi</h3>
+          <p>Tüm ürünlerimiz orijinal ve garantilidir</p>
+        </div>
+
+        <div class="özellik">
+          <div class="özellik-icon">🔄</div>
+          <h3>Kolay İade</h3>
+          <p>14 gün içerisinde kolay iade imkanı</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <h2>Haberdar Olun</h2>
+      <p>En yeni ürünlerimiz ve kampanyalarımızdan haberdar olmak için bültenimize abone olun</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="E-posta adresiniz">
+        <button type="submit">Abone Ol</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Güzellik Dünyası</h3>
+        <p>En kaliteli kozmetik ve makyaj ürünlerini sizlerle buluşturuyoruz.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Hızlı Erişim</h3>
+        <ul class="footer-links">
+          <li><a href="anasayfa.html">Ana Sayfa</a></li>
+          <li><a href="urunler.html">Ürünler</a></li>
+          <li><a href="kategoriler.html">Kategoriler</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>İletişim</h3>
+        <ul class="footer-links">
+          <li>Telefon: 0212 123 45 67</li>
+          <li>E-posta: info@guzellikdunyasi.com</li>
+          <li>Adres: Ankara, Türkiye</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      &copy; 2025 Güzellik Dünyası. Tüm hakları saklıdır.
+    </div>
+  </footer>
+
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <h2>Sepetiniz</h2>
+      <p>Ürün sepetinize eklendi!</p>
+      <button class="btn" onclick="closeModal() " style="width: 100%; margin-top: 15px;">Alışverişe Devam Et</button>
+    </div>
+  </div>
+
+  <script>
+    function openModal() {
+      document.getElementById("cart-modal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("cart-modal").style.display = "none";
+    } 
+
+    // Sayfa dışına tıklayınca da modal kapansın
+    window.onclick = function (event) {
+      if (event.target == document.getElementById("cart-modal")) {
+        closeModal();
+      }
+    }
+  </script>
+</body>
+
+</html>
